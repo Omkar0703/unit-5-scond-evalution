@@ -10,18 +10,18 @@ let imgurl = "https://image.tmdb.org/t/p/original";
 async function call() {
 
   try {
-    let d = await fetch(
+    let o = await fetch(
       "https://api.themoviedb.org/3/trending/movie/week?api_key=ccf98bfe6b413ca8ad16f609021ad3a2"
     );
 
 
-    let data = await d.json();
-    let d1 = data.results;
+    let data = await o.json();
+    let o1 = data.results;
     console.log(data.results);
 
 
     let movies = document.getElementById("movies");
-    d1.forEach(function (el) {
+    o1.forEach(function (el) {
       console.log(el);
       let { poster_path, title } = el;
 
