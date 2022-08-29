@@ -29,6 +29,7 @@ async function call() {
       movies.innerHTML += ` <div id="par">
           <img src=${imgurl + poster_path} alt="" />
           <h1>${title}</h1>
+             <button>Book Now</button>
           </div>`;
           
       
